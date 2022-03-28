@@ -9,15 +9,17 @@
         <link href="css/styles.css" rel="stylesheet" type="text/css">
       </head>
 <body>
- 
-   <p>PLS VOTE</p>
-   <button onclick="yesFunction()">YES</button>
-   <button onclick="noFunction()">NO</button>
-
-
-   
-   <p id="output"></p>
-   
-
+  <p>PLS VOTE</p>
+  <div id="buttons">
+    <!-- <button onclick="removeYes()">Remove Yes Votes</button>
+    <button onclick="removeNo()">Remove No Votes</button> -->
+    <br>
+    <button onclick="yesFunction()">YES</button>
+    <button onclick="noFunction()">NO</button>
+    <br>
+    <button id="clickMe" onclick="getVote()">Count Vote</button>
+    <button onclick="clearList()">Clear</button>
+  </div>
+  <p id="output"></p>
 </body>
 </html>
