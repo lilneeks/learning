@@ -31,8 +31,7 @@ let list = [];
 function getVote() {
     let map = {};
     // console.log(list);
-  for (let i = 0; i < list.length; i++) {
-      let item = list[i];
+  for (const item of list) {
       map[item] = (map[item] + 1) || 1;
     }
     document.getElementById("output").textContent = JSON.stringify(map);
