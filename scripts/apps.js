@@ -1,4 +1,4 @@
-
+let list = [];
 
 function outPut(){
     document.getElementById("output").innerHTML = list;
@@ -26,8 +26,6 @@ console.log(list);
 }
 
 
-let list = [];
-
 function getVote() {
     let map = {};
     // console.log(list);
@@ -39,4 +37,3 @@ function getVote() {
     return map;
   }
 
-//   getVote(list);
